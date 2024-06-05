@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-neutral-dark);
+}
+
+:root {
+  --color-primary-dark: #f98491;
+  --color-primary-light: #fce8e8;
+  --color-secondary-dark:#20c4e1;
+  --color-secondary-light: #26ddfe;
+  --color-complementary: #F9F9E0;
+  --color-neutral-dark: #474747;
+
+  --default-transition: all 200ms ease-in-out;
+
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+
+  --super-title: 30pt;
+  --title: 16pt;
+  --subtitle: 14pt;
+  --text: 12pt;
+  --small-text: 10pt;
+}
+
+body {
+  background-color: var(--color-primary-light);
+}
+
+main section {
+  width: 100%;
+  padding: var(--spacing-32);
+}
+
+main .start-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-24);
+}
+
+
+main .start-section .start-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .start-section .start-image img {
+  width: 50%;
+}
+
+main .start-section .start-informations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .start-section .start-informations h2 {
+  text-align: center;
+}
+
+main .start-section .start-informations .start-actions a {
+  text-decoration: none;
+}
+
+main .start-section .start-informations .start-actions button {
+  padding: var(--spacing-16);
+  border-radius: var(--spacing-8);
+  margin-top: var(--spacing-24);
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-primary-dark);
+}
+
+main .start-section .start-informations .start-actions button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-complementary);
+  transition: var(--default-transition);
+}
+
+main .start-section .start-informations .start-actions .form-button {
+  border: 1px solid var(--color-secondary-light);
+  background-color: var(--color-secondary-light);
+  color: var(--color-complementary);
+}
+
+main .start-section .start-informations .start-actions .form-button:hover {
+  border: 1px solid var(--color-secondary-dark);
+  background-color: var(--color-secondary-dark);
+}
+
+main .about-section {
+  background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .about-section div h4 {
+  font-size: var(--subtitle);
+  margin-bottom: var(--spacing-16);
+  color: var(--color-complementary);
+  display: block;
+  text-align: center;
+}
+
+main .about-section div p {
+  font-size: var(--text);
+  color: var(--color-complementary);
+  line-height: 170%;
+  text-align: justify;
+}
+
+main .skill-section h4 {
+  font-size: var(--subtitle);
+  margin-bottom: var(--spacing-16);
+  display: block;
+  text-align: center;
+}
+
+main .skill-section .skill-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-16);
+}
+
+main .skill-section .skill-card-container .skill-card {
+  width: 100%;
+  border-radius: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: var(--spacing-16);
+  background-color: var(--color-primary-dark);
+  padding: var(--spacing-32);
+  cursor: default;
+  box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.3);
+  transition: 0.5s;
+}
+
+main .skill-section .skill-card-container .skill-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.5);
+  transition: 200ms;
+}
+
+main .skill-section .skill-card i {
+  font-size: var(--super-title);
+  color: var(--color-secondary-light);
+}
+
+main .skill-section .skill-card p {
+  color: var(--color-complementary);
+}
+
+main .skill-section .skill-card .skill-name {
+  font-size: var(--subtitle);
+}
+
+main .skill-section .skill-card p {
+  font-size: var(--small-text);
+}
+
+main .form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-32);
+}
+
+main .form-container form {
+  width: 60vw;
+  background-color: var(--color-primary-dark);
+  padding: var(--spacing-32);
+  border-radius: var(--spacing-8);
+  box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.3);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-16);
+}
+
+main .form-container form h3 {
+  color: var(--color-primary-light);
+}
+
+main .form-container form input {
+  width: 100%;
+  padding: var(--spacing-16);
+  border-radius: var(--spacing-8);
+  border: 1px solid var(--color-primary-light);
+  background-color: var(--color-primary-light);
+  outline: none;
+  transition: var(--default-transition);
+}
+
+main .form-container form button {
+  width: 100%;
+  padding: var(--spacing-16);
+  border-radius: var(--spacing-8);
+  margin-top: var(--spacing-24);
+  border: 1px solid var(--color-primary-light);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-primary-light);
+}
+
+main .form-container form button:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  transition: var(--default-transition);
+}
+
+main .form-container form a {
+  color:  var(--color-primary-light);
+  font-size: var(--small-text);
+  opacity: .7;
+}
+
+main .form-container span {
+  opacity: .5;
+}
+
+@media screen and (min-width: 960px) {
+  main .start-section {
+    height: 90vh;
+  }
+
+  main .start-section .start-image img {
+    width: 40%;
+  }
+
+  main .form-container form {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  main .start-section {
+    max-width: 1360px;
+    height: 90vh;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  main .start-section .start-image {
+    width: 50%;
+  }
+
+  main .start-section .start-image img {
+    width: 70%;
+  }
+
+  main .start-section .start-informations {
+    width: 50%;
+    align-items: start;
+  }
+
+  main .start-section .start-informations h5 {
+    font-size: var(--title);
+  }
+
+  main .start-section .start-informations h2 {
+    font-size: var(--super-title);
+    text-align: left;
+  }
+
+  main .about-section {
+    height: 60vh;
+    padding: 0;
+  }
+
+  main .about-section div {
+    max-width: 1360px;
+    padding: var(--spacing-32);
+  }
+
+  main .about-section div h4 {
+    text-align: left;
+  }
+
+  main .skill-section {
+    max-width: 1360px;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .skill-section h4 {
+    text-align: left;
+  }
+
+  main .skill-section .skill-card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main .skill-section .skill-card-container .skill-card {
+    flex-basis: calc(25% - 16px);
+    align-items: center;
+    min-height: 250px;
+  }
+
+  main .skill-section .skill-card-container .skill-card p {
+    text-align: center;
+  }
+
+  main .form-container form {
+    width: 30vw;
+  }
+}
